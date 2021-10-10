@@ -27,10 +27,10 @@ Coder2hacker platform will provide guidance to beginner developers and make them
 
 
 
-Thank You for your Amazing Contribution!!
+# Thank You for your Amazing Contribution!!
 
 PS: If anyone wants to contribute in my projects, you guys are welcomed You can select any repository, I will accept all appropriate changes.
 
-Thanks, Let's hack.
+# Thanks, Let's hack.
 
-Feel free to contribute 🚀
+# Feel free to contribute 🚀
