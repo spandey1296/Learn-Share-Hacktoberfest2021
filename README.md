@@ -12,7 +12,7 @@ Coder2hacker platform will provide guidance to beginner developers and make them
 
 ## Getting Started
 
-1. Fork this repo.
+1. Fork this repo and click on star.
 1. Clone the repo
 ```git clone <YOUR_FORKED_REPO_URL>```
 1. CD into the specific directory. Create a new branch of the master ```git branch <NEW_BRANCH_NAME>```
