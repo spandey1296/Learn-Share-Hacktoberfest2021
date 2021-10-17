@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style type="text/css">
+.body {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.col-md-5 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-style: bolder;
+}
+</style>
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="https://media.cheggcdn.com/media/388/388fa8e5-1af0-4f4d-8961-1825be7470fc/phpD9Y5S2" height="200px" width="200px;"><br>
+                <label>10$</label><br>
+                <input type="text" name="val1" id="val1"><br>
+                <button type="button" id="btn1" onclick="cart1();">Add to cart</button>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <img src="https://media.cheggcdn.com/media/310/310164f1-3d2d-4f93-872a-f335374e7fdd/phpwJJjz6" height="200px" width="200px;"><br>
+                <label>20$</label><br>
+                <input type="text" name="val2" id="val2"><br>
+                <button type="button" onclick="cart2();">Add to cart</button>
+                <br>
+                <br>
+            </div>
+
+            
+        </div>
+        <p onclick="result_view();"> <strong>Your Cart contains: <span id = "res"></span>$</strong></p>
+        
+    </div>
+</body>
+
+
+
+<script type="text/javascript">
+	var result1, result2;
+	var num1, num2;
+
+
+	function cart1(){
+
+	        num1 = document.getElementById("val1").value;
+
+	        if(isNaN(num1)){
+	        	alert("Invalid data");
+	        	return false;
+	        }
+	        if (num1 == "") {
+	        	num1 = 0;
+	        	num2 = 10;
+	        	result1 =  parseInt(num1 * num2);
+			}else{
+				num2 = 10;
+	        	result1 =  parseInt(num1 * num2);
+			}	
+			    
+	}
+
+	function cart2(){ 
+			
+	        num2 = document.getElementById("val2").value;
+	        if(isNaN(num2)){
+		        alert("Invalid data");
+		        return false;
+		     }
+
+	        if (num2 == "") {
+			    num2 = 0;
+			    num3 = 20;
+	         	result2 =  parseInt(num2 * num3);
+
+			 }else{
+			 	num3 = 20;
+	        	result2 =  parseInt(num2 * num3);
+			 }
+			
+	}
+
+	function result_view(){
+		final_res = result1 + result2;
+	document.getElementById("res").innerHTML = final_res;
+	}
+
+	
+
+</script>
+
+
+</html>

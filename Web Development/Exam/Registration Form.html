@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form</title>
+    <style type="text/css">
+    header {
+        display: inline;
+        padding: 10px;
+    }
+    header img {
+        height: 60px;
+        width: 50px;
+        float: left;
+    }
+
+    header h2 {
+        color: red;
+    }
+
+    label{
+    	float: right;
+    }
+
+    tr td{
+    	padding: 10px;
+    }
+    #lang label{
+    	float: none;
+    	margin-left: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h2>Employee Registration Form<img src="1.jpg"></h2>
+        </header>
+        <table> 
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="" placeholder="Enter the Name here"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="Password" name="" placeholder="*********"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date" name=""></td>
+            </tr>
+            <tr>
+                <td><label>City</label></td>
+                <td><input type="text" name="" placeholder="Enter City here"></td>
+            </tr>
+            <tr>
+                <td><label>State</label></td>
+                <td><select id="#" name="#">
+                        <option value="#">Delhi</option>
+                        <option value="#">Andhra Pradesh</option>
+                        <option value="#">Punjab</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="" placeholder="Enter Email here"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Mobile</label></td>
+                <td><input type="number" name="" placeholder="+91"></td>
+            </tr>
+            <tr>
+                <td><label>Languages Known</label></td>
+                <td  id="lang">
+                	<input type="checkbox" id="cb" name="#" value="">
+					<label for="#">Pubjab </label>
+					<input type="checkbox" id="cb" name="#" value="#">
+					<label for="#"> Hindi</label>
+					<input type="checkbox" id="cb" name="#" value="#">
+					<label for="#">English</label>
+				</td>
+            </tr>
+
+            <tr>
+                <td><label>Additional Information</label></td>
+                <td><textarea name="message" rows="5" cols="30">
+optional
+</textarea></td>
+            </tr>
+
+            <tr>
+            	<td><input type="button" name="" value="Reset"><input type="button" name="" value="Submit"></td>
+            </tr>
+
+
+        </table>
+    </section>
+</body>
+
+</html>
