@@ -1,10 +1,17 @@
 
-import java.util.Arrays;
+import java.util.*;
 
 
 public class longest_Inc_Seq {
     public static void main(String[] args) {
-        int arr[]={1,2,1,2,3,7,6,7,8,9};
+        Scanner sc=new Scanner(System.in);
+        //Enter the number of elements
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        //Enter the elements
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
         System.out.println("Maximum Length is ");
         System.out.println(find(arr));
     }
@@ -30,31 +37,13 @@ public class longest_Inc_Seq {
                }
            }
        }
-//        System.out.println(Arrays.toString(A));
-//        System.out.println(Arrays.toString(T));
-   // find maxIndex where ans is locate
        int maxIndex=0;
        for(int i=0;i<T.length;i++)
        {
            if(T[i]>T[maxIndex])
                maxIndex=i;
        }
-       
-      // print the elements
-//       int y=-1;
-//       for(int i=0;i<T.length;i++)
-//       {
-//           if(T[i]>y)
-//           {
-//               System.out.print(arr[i]+" ");
-//               y=T[i];
-//           }
-//       }
-//        System.out.println();
-//       
-       
-       
-       
+  
         return T[maxIndex];
     }
 }
