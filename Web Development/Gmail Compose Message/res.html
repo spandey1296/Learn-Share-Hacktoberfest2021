@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+  <style type="text/css">
+  	
+  	#myDialog{
+  		border-radius: 10px;
+  		background-color: white;
+  		color: black;
+  	}
+  	#myDialog .dialog-header{
+  		padding: 10px;
+  		border-radius: 10px;
+  	}
+
+
+  	#myDialog .dialog-header pull-right, #myDialog .attach-link pull-right{
+  		float: right;
+  	}
+
+  	#myDialog .dialog-header span i,#myDialog .attach-link span i{
+  		margin: 5px;
+  		padding: 2px;
+  	}
+
+  	#myDialog .attach-link{
+  		width: 100%;
+  	}
+
+  	#myDialog input:focus, textarea:focus, select:focus, #myDialog{
+        outline: none;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+<section id="container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<button class="btn" onclick="myFunction()"><img src="https://bit.ly/3fTNvV3" height="50px" width="auto;"></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<dialog id="myDialog">
+	<div class="container">
+		<div class="row">
+							<div class="col-lg-12 bg-dark text-white">
+								<div class="row">
+									<div class="col-lg-12 dialog-header">
+										<span class="pull-right">
+											<a href="#"><i class="fa fa-minus" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+										</span>
+										<h6 class="pt-0">New Message</h6>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-lg-12 p-0 message-box-input">
+								<form>
+								  	<div class="form-group">
+								    	<input type="email" class="form-control" id="#" aria-describedby="#" placeholder="Recipients">
+								    	<input type="email" class="form-control" id="#" aria-describedby="#" placeholder="Subject">
+								  		<textarea class="form-control" id="#" rows="10"></textarea>
+								  	</div>
+								 </form>
+							</div>
+
+
+							<div class="co-lg-12 message-box-last-content p-2 attach-link" >
+								<div class="row">
+									<div class="btn co-lg-2">
+										<a href="#" class="btn btn-primary btn-sm pl-3 pr-3">SEND</a>
+									</div>
+									<div class="symbols col-lg-8">
+										<span class="#">
+											<i class="fa fa-paperclip" aria-hidden="true"></i>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											
+											<i class="fa fa-smile-o" aria-hidden="true"></i>
+											
+											<i class='fab fa-google-drive fa-lg'></i>
+
+											<i class="fa fa-picture-o" aria-hidden="true"></i>
+
+											<i class="fa fa-lock" aria-hidden="true"></i>
+											<i class="fas fa-pen"></i>
+									
+								        </span>
+									</div>
+
+									<div class="right col-lg-2">
+										<span class="pull-right">
+											<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+											<i class="fas fa-trash"></i>
+										</span>
+									</div>
+
+								
+
+								
+								
+							</div>
+
+
+
+
+		</div>
+	</div>
+</dialog>
+
+<script>
+function myFunction() {
+  document.getElementById("myDialog").open = true;
+}
+</script>
+
+
+
+</body>
+</html>

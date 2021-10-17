@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examination form</title>
+
+    <script type="text/javascript">
+        animal_name = document.getElementsByTagName('animal_name');
+        color_required = document.getElementsByTagName('color_required');
+
+
+        
+        if((animal_name == "")){
+            alert("You should fill all the textboxes");
+            return false;
+        }
+
+
+        if((color_1 == "") || (color_2 == "") || (color_13 == "")){
+            alert("You should fill all the textboxes");
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h2>Build-a-Bear</h2>
+        </header>
+
+        <input type="text" name="animal_name" placeholder="Animal Name"><p id="name_required">
+
+        <select id="#" name="#"><p id="color_required">
+            <option value="#" name="color_0">Select a Color</option>
+            <option value="#" name="color_1">Black</option>
+            <option value="#" name="color_2">Grey</option>
+            <option value="#" name="color_3">Green</option>
+        </select>
+
+
+        <label> Please choose size: </label><p id="size_required">
+        <input type="radio" id="#" name="small" value="#">
+        <label for="male">small</label><br>
+
+        <input type="radio" id="#" name="medium" value="#">
+        <label for="female">medium</label><br>
+
+        <input type="radio" id="#" name="large" value="#">
+        <label for="female">large</label><br>
+
+
+     <label> Please choose add ons: </label><p id="addons_required">
+        <input type="checkbox" id="#" name="top_hat" value="">
+            <label for="#">Top hat </label><br>
+            <input type="checkbox" id="#" name="monocle" value="">
+            <label for="#">Monocle </label><br>
+            <input type="checkbox" id="#" name="wc" value="">
+            <label for="#"> Walking cane</label><br>
+            <input type="checkbox" id="#" name="tuxedo" value="">
+            <label for="#">Tuxedo </label><br><br>
+
+
+            <input type="button" name="submit" value="Submit your order">
+    </section>
+</body>
+
+</html>

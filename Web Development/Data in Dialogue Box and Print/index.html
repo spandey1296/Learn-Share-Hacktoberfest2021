@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+        // function for getting the name dialogue box
+        function changeName(){
+document.getElementById("name").innerHTML = document.getElementById("nameField").value;
+}
+
+
+// function for getting the answer in dialogue box
+
+ function changeAnswer(){
+                var e = document.getElementById("AnswerField");
+                var result = e.options[e.selectedIndex].text;
+                
+                document.getElementById("Relation").innerHTML = result;
+            }
+
+
+// function for getting the Testorder in dialogue box
+
+ function testorderGroup(){
+                var e = document.getElementById("testorderField");
+                var result = e.options[e.selectedIndex].text;
+                
+                document.getElementById("Testorder").innerHTML = result;
+            }
+
+
+            
+
+</script>
+    <style>
+        .badge {
+border-radius: 20px;
+border: 2px solid black;
+width: 400px;
+height: 200px;
+}
+
+header {
+background: none;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+margin-bottom: 8px;
+height: 55px;
+}
+
+.myInfo {
+font-family: sans-serif;
+font-weight: bold;
+text-align: center;
+padding: 4px;
+font-size: 30px;
+padding-top: 2px;
+}
+
+#name{
+font-weight: heavy;
+font-size: 20px;
+}
+
+#info{
+margin-top: 2px;
+}
+
+@media print{
+#info{
+visibility: show;
+}
+}
+</style>
+</head>
+
+<body>
+    <div class="badge" id="badge">
+        <header id="group">
+        </header>
+        <div class="myInfo">
+            <span id="name"></span>
+            <br />
+            <span id="Relation"></span>
+            <br />
+            <span id="Testorder"></span>
+        </div>
+    </div>
+    <div id="info">
+        Name: <input type="text" id="nameField" value="" onkeyup="changeName()">
+        <br />
+        <br />
+        Answer:
+        <select name="Answer" id="AnswerField" onChange="changeAnswer()"><br />
+            <option value=></option>
+            <option value=>Answer1:</option>
+            <option value=>Answer2:</option>
+            <option value=>Answer3:</option>
+            <option value=>Answer4:</option>
+            <option value=>Answer5:</option>
+            <option value=>Answer6:</option>
+            <option value=>Answer7:</option>
+            <option value=>Answer8:</option>
+        </select>
+        <br /><br />
+        Testorder:
+        <select name="testorder" id="testorderField" onChange="testorderGroup()"><br />
+            <option value=></option>
+            <option value=>test1</option>
+            <option value=>test2</option>
+            <option value=>test3</option>
+            <option value=>test4</option>
+            <option value=>test5</option>
+            <option value=>test6</option>
+            <option value=>test7</option>
+            <option value=>test8</option>
+            <option value=>test9</option>
+            <option value=>test10</option>
+        </select>
+        <br />
+        <br />
+        <input type="button" value="Print" onclick="window.print()">
+    </div>
+</body>
+
+</html>

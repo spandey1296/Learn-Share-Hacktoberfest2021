@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Concert Booking</title>
+  <script>
+
+function time_select(clicked) {
+  val = clicked;
+}  
+
+function myFunction() {
+
+  var name = document.getElementById("username").value;
+  
+  if(document.getElementById('num1').checked){
+    num = document.getElementById('num1').value;
+  }else if(document.getElementById('num2').checked){
+
+    num = document.getElementById('num2').value;
+  }else{
+    num = document.getElementById('num3').value;
+  }
+
+  var x = document.getElementById("myBtn");
+  
+  document.getElementById("res").innerHTML = name + " you have successfully booked the show for " + num + " people" +" at "  + val;
+}
+</script>
+</head>
+<body>
+
+<h3>Concert Booking</h3>
+<label> Name and Surname </label>
+<input type = "text" id = "username">
+<br>
+<br>
+
+<label> Number of tickets</label><br><br>
+<input type="radio" id="num1" value="1">
+<label for="age1">1</label>
+  
+<input type="radio" id="num2"  value="2">
+<label for="age2">2</label>
+  
+<input type="radio" id="num3" value="3">
+<label for="age3">3</label>
+
+<br>
+<br>
+  
+
+
+
+<label> Select Show time: </label><br><br>
+
+<button type="button" id = "time1" value="11:00" onClick="time_select(this.value)"> 11:10 </button>
+
+<button type="button" id = "time2" value="14:00" onClick="time_select(this.value)"> 14:00</button>
+
+<button type="button" id = "time3" value="17:00" onClick="time_select(this.value)">17:10</button>
+
+<br>
+<br>
+
+
+
+<button type="button" id="myBtn" onClick="myFunction()">Book</button>
+
+<p id="res"></p>
+
+
+</body>
+</html>
