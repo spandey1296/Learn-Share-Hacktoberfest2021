@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styling.css">
+  <meat charset="utf-8">
+    <title>Student Enrollment Form</title>
+</head>
+
+<body onload="printLocalData()">
+  <header>
+    <h4>
+      Student Enrollment Form
+    </h4>
+  </header>
+  <!-- <div class="main"> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm section column">
+          <form class="registerform" name="enroll">
+
+            <div class="form-group row td">
+              <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control textfield" id="inname" onfocusout="myFunction()" name="inputname" placeholder="Name">
+                <small class="ssmall hidden" id="validatename">
+                  Name should be 1-50 character long and must be start with Alphabet!!!
+                </small>
+                <small class="ssmall hidden" id="n">
+                  Please Enter Your Name!!!
+                </small>
+
+              </div>
+            </div>
+
+            <div class="form-group row td">
+              <label for="inputemail" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control textfield" onfocusout="myFunction1()" name="inputemail" id="inemail"  placeholder="Email">
+                <small class="ssmall hidden" id="validateemail">
+                  Invalid Email!!!
+                </small>
+                <small class="ssmall hidden" id="e">
+                  Please Enter Your Email!!!
+                </small>
+              </div>
+            </div>
+
+            <div class="form-group row td">
+              <label for="inputwebsite" class="col-sm-2 col-form-label">Website</label>
+              <div class="col-sm-10">
+                <input type="url" class="form-control textfield" id="tf1" pattern="http://.https://*"
+                  placeholder="Website Link">
+                <small class="ssmall hidden" id="validatewebsite">
+                  Please Enter a valid website!!!
+                </small>
+                <small class="ssmall hidden" id="w">
+                  Please Enter Your Website Link!!!
+                </small>
+              </div>
+            </div>
+
+            <div class="form-group row td">
+              <label for="inputimage" class="col-sm-2 col-form-label">Image link</label>
+              <div class="col-sm-10">
+                <input type="url" class="form-control textfield"  name="inputimage" id="inimage"
+                  placeholder="Image Link">
+                <small class="ssmall hidden" id="validateimage">
+                  Please Enter a valid Image URL!!!
+                </small>
+                <small class="ssmall hidden" id="i">
+                  Please Enter Any Image Link!!!
+                </small>
+              </div>
+            </div>
+
+            <fieldset class="form-group">
+              <div class="row td">
+                <label for="inputgender" class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="grid1" onclick="removeErrorG()" name="gridRadios" value="Male">
+                    <label class="form-check-label" for="">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="grid2" onclick="removeErrorG()" name="gridRadios" value="Female">
+                    <label class="form-check-label" for="grid2">
+                      Female
+                    </label>
+                  </div>
+                  <small class="ssmall hidden" id="validategender">
+                    Please select your gender!!!
+                  </small>
+                </div>
+              </div>
+            </fieldset>
+
+
+
+            <div class="form-group row td">
+              <label for="inputskill" class="col-sm-2 col-form-label">Skills</label>
+              <div class="col-sm-10">
+
+                <input class="form-check-input" type="checkbox" onclick="removeErrorC()" name="checkbox3" id="cb1" value="option1">
+                <label class="form-check-label labelmar" for="inlineCheckbox1">Java</label>
+
+                <input class="form-check-input" type="checkbox" onclick="removeErrorC()" name="checkbox2" id="cb2" value="option2">
+                <label class="form-check-label labelmar" for="inlineCheckbox2">HTML</label>
+
+
+                <input class="form-check-input" type="checkbox" onclick="removeErrorC()" name="checkbox3" id="cb3" value="option3">
+                <label class="form-check-label labelmar" for="inlineCheckbox3">CSS</label>
+              </div>
+              <div  class="extrapadding">
+                <small class="ssmall hidden" id="validateskill">
+                  Please select atleast one skill!!!
+                </small>
+              </div>
+            </div>
+
+            <div class="form-group row td">
+              <div class="col-sm-10">
+                <button type="submit" name="button1" id="bt1" class="btn btn-primary">Enroll
+                  Student</button>
+                <button type="reset" name="button2" id="bt2" onclick="clearError()" class="btn btn-danger">Clear</button>
+              </div>
+            </div>
+
+
+          </form>
+
+        </div>
+        <div class="col-sm right column">
+          <div class="textright">
+            Enrolled Students
+          </div>
+
+          <div class="scrollp">
+            <table id="display">
+              <tr>
+                <td class="firstrow" width="80%">Description</td>
+                <td class="firstrow" width="20%">Image</td>
+              </tr>
+
+
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <footer class="page-footer font-small">
+
+
+    <div class="footer-copyright text-center py-3">
+      Copyright 2020-2021 by Fresher Training
+    </div>
+
+
+  </footer>
+
+
+  <script type="text/javascript" src="./validation.js"></script>
+
+</body>
+
+</html>
