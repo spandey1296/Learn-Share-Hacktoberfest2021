@@ -21,7 +21,7 @@
         cout<<"Enter number of elements in array: ";
         cin>>n;
         int a[n];
-        cout<<"Enter sorted array of elements: ";
+        cout<<"Enter array elements: ";
         for(i=0;i<n;i++)
             cin>>a[i];
         cout<<"Enter number to be searched: ";
