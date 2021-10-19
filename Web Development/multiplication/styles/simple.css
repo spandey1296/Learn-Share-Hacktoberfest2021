@@ -1,0 +1,46 @@
+html
+{
+    margin: auto 0;
+    text-align: center;
+}
+body {
+    font-family: arial;
+    
+}
+
+div.headingBlock {
+    color: rgb(20, 20, 200);
+}
+
+#simple {
+    color: red;
+}
+
+input,
+label,
+#doIt {
+    font-size: 200%;
+}
+
+#doIt {
+    cursor: pointer;
+}
+
+div {
+    margin: 2em;
+}
+
+.positive {
+    color: blue;
+}
+
+.negative {
+    color: red;
+}
+
+img {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    padding: 10px;
+}
