@@ -1,6 +1,6 @@
-# Learn-Share-Hacktoberfest2021
+## Learn-Share-Hacktoberfest2021
 ## Project,Java,Python,C,C++,HTML,CSS,Web Development,Data Structure & Algorithm,Full Stack Development
-# Explore Open Source
+## Explore Open Source
 
 <p align="center">
   <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" />
