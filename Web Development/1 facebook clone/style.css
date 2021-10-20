@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+}
+
+#container {
+  /* border:2px solid red; */
+  height: 60%;
+  width: 65%;
+  margin: auto;
+  margin-top: 7%;
+  box-sizing: border-box;
+  display: flex;
+}
+#container > div {
+  /* border: 2px solid red; */
+  height: 80%;
+  width: 48%;
+  margin: auto;
+}
+#facebook-logo {
+  display: flex;
+  flex-direction: column;
+}
+#facebook-logo div {
+  /* border:2px solid red; */
+  height: 106px;
+  width: 301px;
+  margin: 4% 0 0 0;
+}
+#facebook-logo p {
+  width: 90%;
+  margin: -12px 0 0 6.2%;
+  font-size: 1.56rem;
+  font-family: sans-serif;
+  line-height: 32px;
+  font-weight: 540;
+}
+
+#login > div {
+  /* border:2px solid red; */
+  background-color: white;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 9px;
+  box-shadow: 0 0 10px 5px rgb(204, 202, 202);
+  padding-bottom: 5%;
+}
+#login > div {
+  display: flex;
+  flex-direction: column;
+}
+#login > div > input {
+  width: 85%;
+  padding: 4%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  border-radius: 6px;
+  line-height: 12px;
+}
+#login > div > button {
+  /* width:85%; */
+  /* padding: 4%; */
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  border-radius: 6px;
+}
+#login > div > button {
+  color: white;
+  box-sizing: border-box;
+  padding: 4.3%;
+}
+#login > div > input {
+  border: 1px solid rgb(192, 188, 188);
+}
+input[placeholder] {
+  font-size: large;
+}
+#log {
+  font-size: 12%;
+  background-color: #1877f2;
+  width: 93%;
+  font-size: 1.6rem;
+  line-height: 18px;
+}
+#login p {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+#login p a {
+  color: #1877f2;
+  text-decoration: none;
+}
+hr {
+  width: 90%;
+  margin: auto;
+}
+#new-account {
+  background-color: #0fb11c;
+  /* width:60%; */
+  font-size: 18px;
+  padding: 12% 12px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+}
+#create-page {
+  position: absolute;
+  top: 77%;
+  left: 55%;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+#create-page a {
+  color: black;
+  font-weight: bold;
+}
