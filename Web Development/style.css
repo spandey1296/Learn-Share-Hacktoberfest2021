@@ -1,0 +1,59 @@
+ body{
+     margin:0;
+     padding: 0;
+ }
+ .calci{
+     width:500px;
+     padding-top:50px;
+     padding-bottom: 100px;
+     position:absolute;
+     top:50%;
+     left:70%;
+     transform: translate(-50%,-50%);
+     transition: .25px;
+     /* background-color: black; */
+     text-align: center ;
+ }
+ #display{
+     border:none;
+     background:white;
+     border-radius: 30px; 
+     font-size:20px;
+     font-family: sans-serif;
+     width:245;
+     font-weight: 300;
+     height:80;
+     margin:auto;
+     border:2px solid white;
+ }
+ .buttonDesign{
+     width:55;
+     height: 55;
+     padding-top:-1px;
+     border:none;
+     font-size: 20;
+     font-weight: 300;
+     font-family: sans-serif;
+     border-radius:30px;
+     margin: 1.5;
+ }
+ .operatorDesign{
+     width:55;
+     height: 55;
+     padding-top:-1px;
+     border:none;
+     font-size: 20;
+     font-weight: 300;
+     font-family: sans-serif;
+     border-radius:30px;
+     margin: 1.5;
+     transition:0.25;
+     cursor:pointer;
+ }
+ .operatorDesign:hover{
+background-color: turquoise;
+ }
+
+ #zero{
+     width:50px;
+ }
