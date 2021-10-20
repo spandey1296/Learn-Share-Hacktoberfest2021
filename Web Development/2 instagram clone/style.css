@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: rgba(250, 250, 250, 1); */
+  background-color: #fafafa;
+  height: 100vh;
+  width: 100vw;
+}
+#container {
+  /* border: 2px solid red; */
+  height: 90%;
+  width: 60%;
+  margin: auto;
+  margin-top: 1.2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#igimage {
+  width: 454px;
+  height: 618px;
+  margin: auto;
+}
+#igimage img {
+  height: 100%;
+  width: 89%;
+  /* border:2px solid red; */
+  margin-left: 12%;
+}
+#iglogin {
+  width: 454px;
+  height: 618px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#box1 {
+  width: 75%;
+  /* border: 2px solid rgb(221, 218, 218); */
+  border: 2px solid #dbdbdb;
+  height: 61%;
+  margin-top: 6%;
+  margin-left: 2%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#page-heading {
+  height: 33%;
+  font-family: Billabong;
+  font-size: 2rem;
+  /* border:2px solid red; */
+  padding-bottom: 2%;
+}
+#page-heading h1 {
+  /* border:2px solid red; */
+  font-weight: 100;
+  display: inline-block;
+  margin: 2% 20% 2% 20%;
+}
+#input1 input {
+  /* border: 2px solid red; */
+  /* margin-top: -20%; */
+  position: relative;
+  top:32%;
+}
+#iglogin div input {
+  width: 75%;
+  /* line-height: 30px; */
+  padding: 12px;
+  margin: auto;
+  display: block;
+  margin-top: -2.3%;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  /* position: relative; */
+  /* top:-80%; */
+  /* left:20%; */
+}
+#iglogin button {
+input[placeholder] {
+  font-size: 14px;
+}
+  border: 1px solid #835555;
+  padding: 1.5%;
+  background-color: rgb(162, 218, 253);
+  height: 3%;
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 9%;
+  width: 82%;
+  font-weight: 400;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 6%;
+}
+hr {
+  width: 33%;
+  display: inline-block;
+  margin-bottom: 1%;
+  margin-left: 6%;
+}
+#or {
+  display: inline-block;
+  color: #838181;
+  margin-left: 6%;
+  /* margin-right:2%; */
+}
+#API {
+  /* border:2px solid red; */
+  height: 32px;
+  width: 180px;
+  margin: auto;
+  margin-top: 5%;
+}
+#API img {
+  /* border:2px solid red; */
+  height: 100%;
+  width: 100%;
+}
+#forgot {
+  margin-left: 36%;
+  margin-top: 2%;
+}
+#forgot a {
+  text-decoration: none;
+}
+#box2 {
+  width: 75%;
+  height: 10%;
+  background-color: #fff;
+  margin-top: 2.5%;
+  margin-left: 2%;
+  border: 2px solid rgb(221, 218, 218);
+  box-sizing: border-box;
+}
+#box2 p {
+  font-family: sans-serif;
+  padding: 6% 12%;
+  text-align: center;
+  color: rgb(114, 113, 113);
+  font-size: 0.95rem;
+}
+#box2 p a {
+  color: #0095f6;
+}
+#box3 {
+  width: 75%;
+  height: 3%;
+  /* background-color: #fff; */
+  margin-top: 5%;
+  margin-left: 2%;
+}
+#box3 p {
+  text-align: center;
+  font-style: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#box4 {
+  width: 65%;
+  height: 10%;
+  /* background-color: #fff; */
+  margin-top: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border:2px solid red; */
+  margin-left: 7%;
+  margin-top: 1%;
+}
+#applestore {
+  width: 130px;
+  height: 40px;
+  /* border:2px solid red; */
+  margin: auto;
+}
+#applestore img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+#playstore {
+  width: 130px;
+  height: 40px;
+  /* border:2px solid red; */
+  margin: auto;
+}
+#playstore img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+@keyframes changebackground {
+  0% {
+    background-image: url("static/instagram.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 18.9%;
+    left: 32.65%;
+    height: 60%;
+    width: 15.6%;
+  }
+  12% {
+    background-image: url("static/s2.PNG");
+    background-size: cover;
+    position: absolute;
+    top: 18.9%;
+    left: 32.65%;
+    height: 60%;
+    width: 15.6%;
+  }
+
+  25% {
+    background-image: url("static/s3.PNG");
+    position: absolute;
+    /* background-size: cover; */
+    top: 18.9%;
+    left: 32.65%;
+    height: 60%;
+    width: 15.6%;
+  }
+  50% {
+    background-image: url("static/s2.PNG");
+    position: absolute;
+    top: 18.9%;
+    background-size: cover;
+    left: 32.65%;
+    height: 60%;
+    width: 15.6%;
+  }
+  75% {
+    background-image: url("static/s5.PNG");
+    position: absolute;
+    top: 18.9%;
+    background-size: cover;
+    left: 32.65%;
+    height: 60%;
+    width: 15.6%;
+  }
+  100% {
+    background-image: url("static/s6.PNG");
+    position: absolute;
+    top: 18.9%;
+    left: 32.65%;
+    background-size: cover;
+    height: 60%;
+    width: 15.6%;
+  }
+}
+#backgroundstories {
+  animation: changebackground 30s ease-in infinite alternate;
+}
+
+.horizontal-list li {
+  text-align: center;
+  display: inline-block;
+  /* border:2px solid red; */
+  margin-left: 1%;
+  margin-top: 1.3%;
+}
+.horizontal-list li a {
+  font-size: 12px;
+  color: slategray;
+  font-family: sans-serif;
+}
+.center {
+  text-align: center;
+}
+#lang {
+  color: slategray;
+  font-size: 11px;
+  display: flex;
+  margin-top: 1%;
+  flex-direction: row;
+}
+#lang p {
+  margin-left: 2%;
+  margin-top: 2px;
+}
+#lang select {
+  margin-left: 40%;
+  border: 0px solid transparent;
+  color: slategray;
+  background-color: transparent;
+}
