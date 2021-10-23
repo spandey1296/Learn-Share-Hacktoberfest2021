@@ -17,7 +17,7 @@ public class XmlParse
 		  
 		File file = new File("C:\\Users\\user\\Desktop\\xmlfile.xml");  
 		
-		//an instance of factory that gives a document builder  
+		//an instance of factory that gives a document builder.
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); 
 		
 		//an instance of builder to parse the specified xml file  
