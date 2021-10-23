@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Recursion
 public class Factorial
 {
     public static void main(String args[])
