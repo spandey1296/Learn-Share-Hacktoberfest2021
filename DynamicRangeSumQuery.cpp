@@ -1,6 +1,6 @@
 //implementation of dynamic range sum query problem
 //using segment tree 
-
+//
 //types of query
 //Type1 : Find sum in the range [l,r]
 //Type2 : Given an index, update the array value
