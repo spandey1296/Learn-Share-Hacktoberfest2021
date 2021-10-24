@@ -1,6 +1,6 @@
-# Learn-Share-Hacktoberfest2021
+## Learn-Share-Hacktoberfest2021
 ## Project,Java,Python,C,C++,HTML,CSS,Web Development,Data Structure & Algorithm,Full Stack Development
-# Explore Open Source
+## Explore Open Source
 
 <p align="center">
   <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" />
@@ -12,7 +12,7 @@ Coder2hacker platform will provide guidance to beginner developers and make them
 
 ## Getting Started
 
-1. Fork this repo.
+1. Fork this repo and click on star.
 1. Clone the repo
 ```git clone <YOUR_FORKED_REPO_URL>```
 1. CD into the specific directory. Create a new branch of the master ```git branch <NEW_BRANCH_NAME>```

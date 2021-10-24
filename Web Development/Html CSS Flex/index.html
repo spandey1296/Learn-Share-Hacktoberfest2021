@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            font-family: sans-serif;
+            background: #dfdfdf;
+        }
+
+        section
+        {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .container
+        {
+            width: 90%;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .container .title
+        {
+            position:relative;
+            width: 100%;
+            text-align: left;
+        }
+
+        .container .title h3
+        {
+            font-size: 18px;
+            text-transform: capitalize;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .container .row
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .row .col
+        {
+            width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .row .col:nth-child(1)::before
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 10px;
+            width: 2px;
+            height: 200%;
+            background: #999;
+        }
+
+        .col label
+        {
+            width: 100%;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .col label span
+        {
+            color: red;
+        }
+
+        .col select
+        {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #999;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .col p
+        {
+            margin: 10px 0 24px 0;
+            font-size: 14px;
+            width: 100%;
+            color: #333;
+        }
+
+        .btn
+        {
+            width: 95%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin: auto;
+        }
+
+        .btn button
+        {
+            width: 20%;
+            background: #f00;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            text-transform: capitalize;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="title">
+                <h3>search for :</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="search-type">search type <span>*</span></label>
+                    <select id="search-type">
+                        <option value="Delivery Receipts">delivery receipts</option>
+                    </select>
+                </div>
+                <div class="col">
+                        <label for="search-by">search by</label>
+                        <select id="type">
+                            <option value="select" >select</option>
+                        </select>
+                        <label for="type">type</label>
+                        <select id="type">
+                            <option value="select">select</option>
+                        </select>
+                </div>
+                <div class="col">
+                        <label for="">status</label>
+                        <select id="status">
+                            <option value="any">any</option>
+                        </select>
+                        <label for="">invoice date</label>
+                        <select id="">
+                            <option value="last-12-months">last 12 months</option>
+                        </select>
+                </div>
+                <div class="col">
+                        <label for="">sold to</label>
+                        <p class="sold-to">201468 american tire distribution, inc..</p>
+                        <label for="">ship to</label>
+                        <select id="">
+                            <option value="all">all</option>
+                        </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="apply" type="button">
+                    Apply filters
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

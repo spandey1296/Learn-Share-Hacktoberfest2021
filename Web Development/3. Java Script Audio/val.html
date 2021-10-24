@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>|</title>
+
+    <style type="text/css">
+      .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="card-deck">
+                <div class="card">
+                  <a onclick="myAudioFunction('A');">
+                    <img src="https://bit.ly/2Vagmwa" class="card-img-top" alt="..." >
+                    <div class="centered">FootBall</div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a onclick="myAudioFunction('B');">
+                    <img src="https://bit.ly/2Vagmwa" class="card-img-top" alt="..." >
+                    <div class="centered">FootBall</div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a onclick="myAudioFunction('C');">
+                    <img src="https://i.pinimg.com/originals/9c/74/62/9c7462f98a4ad43d909b0aaf441ae1b4.jpg" class="card-img-top" alt="..." >
+                    <div class="centered">Cricket</div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="card-deck">
+                <div class="card">
+                  <a onclick="myAudioFunction('D');">
+                    <img src="https://static.toiimg.com/photo/msid-70555182/70555182.jpg?859412" class="card-img-top" alt="..." >
+                    <div class="centered">Tennis</div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a onclick="myAudioFunction('E');">
+                    <img src="https://thumbs.dreamstime.com/b/burning-basketball-fire-background-backgrounds-168018631.jpg" class="card-img-top" alt="..." >
+                    <div class="centered">BasketBall</div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a onclick="myAudioFunction('F');">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhl9WXHRU08RJcXDjwb9pJxD1D_Mp3kWstw&usqp=CAU" class="card-img-top" alt="..." >
+                    <div class="centered">Golf</div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+ <script>
+
+    // Replace your audio files here. Example
+
+    //var variable_name = new Audio('audio_path');
+
+     var aAudio = new Audio('2.mp3');
+     var bAudio = new Audio('3.mp3');
+     var cAudio = new Audio('4.mp3');
+     var dAudio = new Audio('5.mp3');
+     var eAudio = new Audio('6.mp3');
+     var fAudio = new Audio('7.mp3');
+
+     // function to play the sounds
+     function myAudioFunction(letter) {
+         if(letter == 'A') {
+             aAudio.play();
+         } else if(letter == 'B') {
+             bAudio.play();
+         }
+         else if(letter == 'C') {
+             bAudio.play();
+         }
+         else if(letter == 'D') {
+             bAudio.play();
+         }
+         else if(letter == 'E') {
+             bAudio.play();
+         }
+         else if(letter == 'F') {
+             bAudio.play();
+         }
+     }
+ </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

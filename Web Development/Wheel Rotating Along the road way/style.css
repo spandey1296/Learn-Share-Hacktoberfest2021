@@ -1,0 +1,40 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.track{
+    background-image: url(track.jpeg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 6s linear infinite;
+}
+.wheel{
+    position: absolute;
+    animation: wheelanimation linear .6s infinite;
+}
+.wheel1{
+    background-image: url(wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 49px;
+    bottom: 71px;
+    left: 570px;
+}
+
+@keyframes wheelanimation{
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes trackanimation{
+     
+    100%{
+        transform: translate(-500vw);
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+    function Calculator() {
+
+        this.read = function() {
+            this.number1 = +prompt('Enter the value of number1: ', 0);
+            this.number2 = +prompt('Enter the value of number2: ', 0);
+        };
+
+        this.sum = function() {
+            return this.number1 + this.number2;
+        };
+
+        this.mul = function() {
+            return this.number1 * this.number2;
+        };
+    }
+
+    let calculator = new Calculator();
+    calculator.read();
+
+    alert("Sum is: " + calculator.sum());
+    alert("Multiplication is: " + calculator.mul());
+    </script>
+</body>
+
+</html>

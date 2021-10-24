@@ -1,0 +1,4 @@
+moviepy
+pillow
+ffmpeg
+ImageMagick
